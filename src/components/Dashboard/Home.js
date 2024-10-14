@@ -18,7 +18,7 @@ function Home() {
 
 
   const getEmployelist = () => {
-    axios.get("http://localhost:4000/all/employe/admin"
+    axios.get("https://ems-backend-1-4dcu.onrender.com/all/employe/admin"
     ).then((res) => {
       if (res.data.status === 1) {
         setEmployelist(res.data.response)
@@ -30,7 +30,7 @@ function Home() {
     getEmployelist()
   }, [])
   const getlist = () => {
-    axios.get("http://localhost:4000/all/category"
+    axios.get("https://ems-backend-1-4dcu.onrender.com/all/category"
 
     ).then((res) => {
       if (res.data.status === 1) {

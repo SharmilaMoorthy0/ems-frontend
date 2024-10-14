@@ -18,7 +18,7 @@ import Header from './components/Header/Header'
 
 
 
-import Admin from './components/Admin';
+
 
 function App() {
   const toastoption = {
@@ -46,7 +46,7 @@ function App() {
     <BrowserRouter>
 
       <Routes>
-        {/* <Route path='/' element={<Page/>} /> */}
+      
         <Route path='/' element={<Login />} />
         <Route path='/header' element={<Header />} />
         <Route path='/signup' element={<Signup />} />
@@ -56,7 +56,7 @@ function App() {
         <Route path='/form' element={<Form />} />
         <Route path='/category' element={<Category />} />
 
-        {/* <Route path='/admin' element={<Admin/>} /> */}
+       
 
 
 

@@ -20,7 +20,7 @@ function Category() {
     if (Category.category === "") {
       toast.error(" category filled cannot be empty!")
     }
-    axios.post("https://management-backend-hu4p.onrender.com/new/category", Category,
+    axios.post("https://ems-backend-1-4dcu.onrender.com/new/category", Category,
 
     ).then((res) => {
       if (res.data.status === 1) {
@@ -41,7 +41,7 @@ function Category() {
   }
 
   const getlist = () => {
-    axios.get("https://management-backend-hu4p.onrender.com/all/category"
+    axios.get("https://ems-backend-1-4dcu.onrender.com/all/category"
 
     ).then((res) => {
       if (res.data.status === 1) {
@@ -63,7 +63,7 @@ function Category() {
       return toast.error("task filled cannot be empty!")
 
     }
-    axios.put(`https://management-backend-hu4p.onrender.com/update/category/${editCategory._id}`, editCategory
+    axios.put(`https://ems-backend-1-4dcu.onrender.com/update/category/${editCategory._id}`, editCategory
 
     ).then((res) => {
       if (res.data.status === 1) {
@@ -90,7 +90,7 @@ function Category() {
 
     }).then((willDelete) => {
       if (willDelete) {
-        axios.delete(`https://management-backend-hu4p.onrender.com/Delete/Category/${id}`
+        axios.delete(`https://ems-backend-1-4dcu.onrender.com/Delete/Category/${id}`
 
         ).then((res) => {
           if (res.data.status === 1) {

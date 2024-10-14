@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import './layout.css'
-import Admin from '../Admin'
+
 import Header from '../Header/Header'
 
 
