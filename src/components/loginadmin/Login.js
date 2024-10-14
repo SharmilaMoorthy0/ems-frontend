@@ -36,7 +36,7 @@ function Login() {
                     Email: "",
                     password: ""
                 })
-                navigate('/home')
+                navigate('/employe')
             }
 
             if (res.data.status === 0) {
@@ -49,7 +49,7 @@ function Login() {
     return (
 
 
-        <div className='container-fluid register-pages'>
+        <div className='container-fluid register-pages text-center '>
             <div className="container">
                 <div class="row  ">
                     <div class='forms '>
@@ -79,6 +79,7 @@ function Login() {
                     </div >
                 </div>
             </div >
+        
 
 
 

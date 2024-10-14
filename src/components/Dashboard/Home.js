@@ -12,11 +12,11 @@ function Home() {
   let user = JSON.parse(localStorage.getItem('userData'))
   const [Employelist, setEmployelist] = useState([])
   const [categoryList, setcategoryList] = useState([])
-  
 
- 
 
- 
+
+
+
   const getEmployelist = () => {
     axios.get("http://localhost:4000/all/employe/admin"
     ).then((res) => {
@@ -43,7 +43,7 @@ function Home() {
     getlist()
   }, [])
 
-  
+
 
 
   const cardData = [
@@ -61,50 +61,28 @@ function Home() {
       count: categoryList?.length
 
     }
-    
 
-    
+
+
   ]
 
   return (
-    <Layout>  <div className='container w-100 bg mt-5'>
-        <div class="mb-4 d-sm-flex align-items-center justify-content-between">
-          <h1 class="h3 mb-0 text-gray-800 text-center">Welcome to Admin Panel</h1>
-         
-        </div>
+    <Layout>   <div className="container w-100 mt-5">
+      <h1 className="h3 mb-4 text-center text-secondary">Welcome to the Admin Panel</h1>
 
-        <div class="row">
-
-          {cardData.map((item) => {
-            return <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-              <div class={`card border-left-${item.color} shadow  mx-1  py-2`}>
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-1">
-                      <div class={`text-xs font-weight text-${item.color}  text-capitalize mb-1`}>
-                        {item.name}</div>
-                      <div class={`h5 mb-0 font-weight text-${item.color}-800`}>{item.text}{item.count}</div>
-                    </div>
-                    
-                  </div>
-                </div>
+      <div className="row w-50">
+        {cardData.map((item, index) => (
+          <div key={index} className="col-lg-6 col-md-12 mb-4">
+            <div className={`card border-left-${item.color} shadow h-100`}>
+              <div className="card-body">
+                <h5 className={`text-${item.color} font-weight-bold`}>{item.name}</h5>
+                <p className="h2 mb-0">Total:{item.count}</p>
               </div>
             </div>
-          })}
-
-
-        </div>
+          </div>
+        ))}
       </div>
-      
-    
-
-
-
-
-
-
-
-      
+    </div>
 
 
 
@@ -117,8 +95,9 @@ function Home() {
 
 
 
-</Layout>
-  
+
+    </Layout>
+
   )
 }
 

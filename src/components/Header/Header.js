@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import logo from '../images/logo.jpg'
+import logo from '../images/logo1.jpg'
 import './header.css'
 
 
@@ -37,7 +37,7 @@ function Header() {
       
       </ul>
      <div className='d-flex  justify-content-between '>
-      {token && (<p className='text-white '>{userData && userData.username ? userData.username : ""} </p>)}
+      {token && (<p className='text-white text-uppercase '>{userData && userData.username ? userData.username : ""} </p>)}
         {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
         <a class=" text-danger mx-5" type="submit" onClick={()=> onLogout()}>LogOut</a>
         </div>

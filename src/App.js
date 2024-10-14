@@ -44,24 +44,24 @@ function App() {
 
   return (
     <BrowserRouter>
-    
+
       <Routes>
-       {/* <Route path='/' element={<Page/>} /> */}
+        {/* <Route path='/' element={<Page/>} /> */}
         <Route path='/' element={<Login />} />
-        <Route path='/header' element={<Header/>} />
-         <Route path='/signup' element={<Signup />} />
-       
+        <Route path='/header' element={<Header />} />
+        <Route path='/signup' element={<Signup />} />
+
         <Route path='/employe' element={<Employe />} />
         <Route path='/home' element={<Home />} />
         <Route path='/form' element={<Form />} />
         <Route path='/category' element={<Category />} />
-       
+
         {/* <Route path='/admin' element={<Admin/>} /> */}
-        
-        
-       
-       
-       
+
+
+
+
+
 
 
 
