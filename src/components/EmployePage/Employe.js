@@ -33,7 +33,7 @@ function Employe() {
 
   const handleSearch = () => {
     setLoading(true);
-    axios.post("https://ems-backend-1-4dcu.onrender.com/employe/search", { query: searchQuery },
+    axios.post("https://ems-backend-2-zn20.onrender.com/employe/search", { query: searchQuery },
 
     )
       .then((res) => {
@@ -48,7 +48,7 @@ function Employe() {
   };
 
   const getlist = () => {
-    axios.get("https://ems-backend-1-4dcu.onrender.com/all/category"
+    axios.get("https://ems-backend-2-zn20.onrender.com/all/category"
 
     ).then((res) => {
       if (res.data.status === 1) {
@@ -66,10 +66,10 @@ function Employe() {
   const getEmployelist = () => {
     let url = ""
     if (user?.role === "admin") {
-      url = "https://ems-backend-1-4dcu.onrender.com/all/employe/admin"
+      url = "https://ems-backend-2-zn20.onrender.com/all/employe/admin"
     }
     else {
-      url = "https://ems-backend-1-4dcu.onrender.com/all/employe"
+      url = "https://ems-backend-2-zn20.onrender.com/all/employe"
     }
     axios.get(url,
       {
@@ -102,7 +102,7 @@ function Employe() {
 
     }).then((willDelete) => {
       if (willDelete) {
-        axios.delete(`https://ems-backend-1-4dcu.onrender.com/Delete/employe/${list._id}`,
+        axios.delete(`https://ems-backend-2-zn20.onrender.com/Delete/employe/${list._id}`,
           {
             headers: {
               Autdorization: localStorage.getItem("myapptoken")
@@ -168,7 +168,7 @@ function Employe() {
   const handleUpdateEmploye = () => {
     toast.loading("Updating...")
     console.log(editEmployeDetail)
-    axios.put(`https://ems-backend-1-4dcu.onrender.com/update/employe/${editEmployeDetail._id}`, editEmployeDetail, {
+    axios.put(`https://ems-backend-2-zn20.onrender.com/update/employe/${editEmployeDetail._id}`, editEmployeDetail, {
       headers: {
         Autdorization: localStorage.getItem("myapptoken")
       }

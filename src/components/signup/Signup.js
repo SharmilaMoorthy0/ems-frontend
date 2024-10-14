@@ -39,7 +39,7 @@ function Signup() {
 
 
 
-        axios.post("https://ems-backend-1-4dcu.onrender.com/user/signup", user).then((res) => {
+        axios.post("https://ems-backend-2-zn20.onrender.com/user/signup", user).then((res) => {
             if (res.data.status === 1) {
                 toast.success(res.data.message)
                 navigate('/')

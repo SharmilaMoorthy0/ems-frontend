@@ -25,7 +25,7 @@ function Login() {
         if (login.password === "") {
             return toast.error("password requried")
         }
-        axios.post("https://ems-backend-1-4dcu.onrender.com/login/user", login).then((res) => {
+        axios.post("https://ems-backend-2-zn20.onrender.com/login/user", login).then((res) => {
             if (res.data.status === 1) {
                 toast.success(res.data.message)
                 console.log(res.data.token)

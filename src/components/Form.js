@@ -50,7 +50,7 @@ function Form() {
 
 
     const getlist = () => {
-        axios.get("http://localhost:4000/all/category"
+        axios.get("https://ems-backend-2-zn20.onrender.com/all/category"
 
         ).then((res) => {
             if (res.data.status === 1) {
@@ -108,7 +108,7 @@ function Form() {
             return toast.error("Any one course is required")
         }
 
-        axios.post("http://localhost:4000/new/employe", { Image, ID, Name, Email, Mobile, Course, Designation, Gender }
+        axios.post("https://ems-backend-2-zn20.onrender.com/new/employe", { Image, ID, Name, Email, Mobile, Course, Designation, Gender }
 
         )
             .then((res) => {
