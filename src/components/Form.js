@@ -29,23 +29,10 @@ function Form() {
     const [Gender, setGender] = useState("")
     const [Designation, setDesignation] = useState("")
     const [categoryList, setcategoryList] = useState([])
-
-
-
-
     const [Employelist, setEmployelist] = useState([])
     const [SelectedCourses, setSelectedCourses] = useState([]);
 
-    const handleCourseChange = (e) => {
-        const { id, checked } = e.target;
-        if (checked) {
-            // Add the selected course to the array
-            setSelectedCourses((prev) => [...prev, id]);
-        } else {
-            // Remove the unselected course from the array
-            setSelectedCourses((prev) => prev.filter((course) => course !== id));
-        }
-    };
+   
 
 
 
@@ -253,7 +240,7 @@ function Form() {
                                                 type="radio"
                                                 id="male"
                                                 name="gender"
-                                                value="Male"// Ensure both radio buttons share the same name
+                                                value="Male"
                                                 checked={Gender === "Male"}
                                                 onChange={(e) => setGender(e.target.value)}
                                                 className="form-check-input"
@@ -265,7 +252,7 @@ function Form() {
                                                 type="radio"
                                                 id="female"
                                                 value="Female"
-                                                name="gender" // Ensure both radio buttons share the same name
+                                                name="gender" 
                                                 checked={Gender === "Female"}
                                                 onChange={(e) => setGender(e.target.value)}
                                                 className="form-check-input"

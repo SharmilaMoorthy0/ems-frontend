@@ -375,7 +375,6 @@ function Employe() {
                         type="radio"
                         id="male"
                         name="gender"
-                        value="Male"// Ensure both radio buttons share the same name
                         checked={editEmployeDetail.Gender === "Male"}
                         onChange={(e) => handlechange(e, "Gender")}
                         className="form-check-input"
@@ -387,7 +386,7 @@ function Employe() {
                         type="radio"
                         id="female"
                         value="Female"
-                        name="gender" // Ensure both radio buttons share the same name
+                        name="gender" 
                         checked={editEmployeDetail.Gender === "Female"}
                         onChange={(e) => handlechange(e, "Gender")}
                         className="form-check-input"
@@ -406,8 +405,8 @@ function Employe() {
                         type="checkbox"
                         id="mca"
                         value="MCA"
-                        checked={editEmployeDetail.Course === "MCA"} // Check if course is selected
-                        onChange={(e) => handleCheckboxChange(e, "MCA")} // Handle change
+                        checked={editEmployeDetail.Course === "MCA"} 
+                        onChange={(e) => handleCheckboxChange(e, "MCA")} 
                         className="form-check-input"
                       />
                       <label htmlFor="mca" className="form-check-label mx-2">MCA</label>
@@ -417,8 +416,8 @@ function Employe() {
                         type="checkbox"
                         id="bca"
                         value="BCA"
-                        checked={editEmployeDetail.Course === "BCA"} // Check if course is selected
-                        onChange={(e) => handleCheckboxChange(e, "BCA")} // Handle change
+                        checked={editEmployeDetail.Course === "BCA"} 
+                        onChange={(e) => handleCheckboxChange(e, "BCA")} 
                         className="form-check-input"
                       />
                       <label htmlFor="bca" className="form-check-label mx-2">BCA</label>
@@ -428,8 +427,8 @@ function Employe() {
                         type="checkbox"
                         id="bsc"
                         value="BSC"
-                        checked={editEmployeDetail.Course === "BSC"} // Check if course is selected
-                        onChange={(e) => handleCheckboxChange(e, "BSC")} // Handle change
+                        checked={editEmployeDetail.Course === "BSC"} 
+                        onChange={(e) => handleCheckboxChange(e, "BSC")} 
                         className="form-check-input"
                       />
                       <label htmlFor="bsc" className="form-check-label mx-2">BSC</label>

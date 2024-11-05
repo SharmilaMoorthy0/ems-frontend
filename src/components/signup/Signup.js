@@ -23,7 +23,7 @@ function Signup() {
     }
 
     const onsubmit = () => {
-        // e.preventDefault()
+       
         if (user.username === "") {
             return toast.error("username requried")
         }

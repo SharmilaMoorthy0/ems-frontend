@@ -74,7 +74,7 @@ function Login() {
                             </div >
                             <button type='submit' onClick={() => OnLogin()}>Login</button>
                             <span>
-                                don't have account?
+                                Don't have account?
                                 <a href='' onClick={() => navigate('/signup')}>REGISTER</a>
                             </span>
                         </div>
