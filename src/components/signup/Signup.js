@@ -68,6 +68,7 @@ function Signup() {
                             <div class="mb-1 mt-1">
                                 <input type='text'
                                     placeholder='Username'
+                                    value={user.username}
                                     name='username' 
                                     onChange={(e)=> handleChange(e)}/>
                             </div>
@@ -76,6 +77,7 @@ function Signup() {
                                 <div class="mb-1 mt-1">
                                     <input type='email'
                                         placeholder='Email'
+                                        value={user.Email}
                                         name='Email' 
                                         onChange={(e)=> handleChange(e)}/>
                                 </div>
@@ -85,6 +87,7 @@ function Signup() {
                                     <input type='password'
                                         placeholder='password'
                                         name='password' 
+                                        value={user.password}
                                         onChange={(e)=> handleChange(e)}/>
                                 </div >
                             </div >

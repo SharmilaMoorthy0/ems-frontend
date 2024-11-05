@@ -57,6 +57,7 @@ function Login() {
                             <div class="mb-3 mt-3">
                                 <input type='email'
                                     placeholder='Email'
+                                   value={login.Email}
                                     name='Email'
                                     onChange={(e) => handleChange(e)} />
                             </div>
@@ -67,6 +68,7 @@ function Login() {
                                     <input type='password'
                                         placeholder='password'
                                         name='password'
+                                        value={login.password}
                                         onChange={(e) => handleChange(e)} />
                                 </div >
                             </div >
