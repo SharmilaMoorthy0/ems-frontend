@@ -38,7 +38,7 @@ function Header() {
       </ul>
      <div className='d-flex  justify-content-between '>
       {token && (<p className='text-white text-uppercase '>{userData && userData.username ? userData.username : ""} </p>)}
-        {/* <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/> */}
+      
         <a class=" text-danger mx-5" type="submit" onClick={()=> onLogout()}>LogOut</a>
         </div>
     </div>

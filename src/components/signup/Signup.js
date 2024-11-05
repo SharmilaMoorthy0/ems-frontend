@@ -60,7 +60,7 @@ function Signup() {
 
     return (
        
-        <div className='container-fluid register-pages '>
+        <div className='container-fluid register-pages p-5'>
             <div className="container">
                 <div class="row  ">
                     <div class='forms'>
@@ -89,7 +89,7 @@ function Signup() {
                                 </div >
                             </div >
                             <button type='submit' className='' onClick={()=>onsubmit()}>create user</button>
-                            <span className='mb-5'>
+                            <span className='mb-3'>
                                 already have account?
                                 <a href='' onClick={() => navigate('/')}>Login</a>
                             </span>
