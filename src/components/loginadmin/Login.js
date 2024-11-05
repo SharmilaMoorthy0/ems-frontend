@@ -49,7 +49,7 @@ function Login() {
     return (
 
 
-        <div className='container-fluid register-pages text-center '>
+        <div className='container-fluid register-pages'>
             <div className="container">
                 <div class="row  ">
                     <div class='forms '>
