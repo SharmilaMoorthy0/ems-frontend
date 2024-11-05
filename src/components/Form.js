@@ -283,8 +283,8 @@ function Form() {
                                             <input
                                                 type="checkbox"
                                                 id="mca"
-                                                // checked={selectedCourses.includes('mca')} // Check if course is selected
-                                                onChange={() => setcourse("MCA")} // Handle change
+                                                
+                                                onChange={() => setcourse("MCA")} 
                                                 className="form-check-input"
                                             />
                                             <label htmlFor="mca" className="form-check-label mx-2">MCA</label>
@@ -293,8 +293,8 @@ function Form() {
                                             <input
                                                 type="checkbox"
                                                 id="bca"
-                                                // checked={selectedCourses.includes('bca')} // Check if course is selected
-                                                onChange={() => setcourse("BCA")} // Handle change
+                                               
+                                                onChange={() => setcourse("BCA")} 
                                                 className="form-check-input"
                                             />
                                             <label htmlFor="bca" className="form-check-label mx-2">BCA</label>
@@ -303,8 +303,8 @@ function Form() {
                                             <input
                                                 type="checkbox"
                                                 id="bsc"
-                                                // checked={selectedCourses.includes('bsc')} // Check if course is selected
-                                                onChange={() => setcourse("BSC")} // Handle change
+                                                
+                                                onChange={() => setcourse("BSC")} 
                                                 className="form-check-input"
                                             />
                                             <label htmlFor="bsc" className="form-check-label mx-2">BSC</label>
